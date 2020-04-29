@@ -13,7 +13,7 @@ class CreateGambarsTable extends Migration
      */
     public function up()
     {
-        Schema::create('gambars', function (Blueprint $table) {
+        Schema::create('gambar', function (Blueprint $table) {
             $table->id();
             $table->string('file');
             $table->string('keterangan');
@@ -28,6 +28,6 @@ class CreateGambarsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gambars');
+        Schema::dropIfExists('gambar');
     }
 }
