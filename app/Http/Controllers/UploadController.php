@@ -8,7 +8,8 @@ class UploadController extends Controller
 {
     public function upload()
     {
-        return view('upload');
+        $gambar = Gambar::get();
+        return view('upload', ['gambar' => $gambar]);
     }
 
     public function proses_upload(Request $request)
